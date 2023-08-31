@@ -1,0 +1,243 @@
+.container{
+    display: grid;
+    grid-template-areas: 
+    'head head head head head'
+    'navbar navbar navbar navbar navbar'
+    'section section section section sidebar'
+    'foot foot foot foot foot';
+}
+.box{
+    border:2px solid black;
+
+}
+#head{
+    background-image: url("../images/592405.jpg");
+    background-repeat: no-repeat ;
+    background-position: top;
+    background-size: cover;
+    height:500px;
+    width:100%;
+    object-fit: cover;
+    grid-area: head;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+#head h1{
+    font-weight:2000;
+    font-size: 50px;
+    color:black;
+}
+#navbar{
+    grid-area: navbar;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:4px 40px;
+/* height:30px;
+    
+   */
+}
+#navbar li{
+    list-style: none;
+    background-color:black;
+width:60%;
+margin:0px 5px;
+text-align: center;
+align-items: center;
+border:2x solid black;
+padding: 10px 10px;
+transition: 0.4s;
+border-radius: 10px;
+box-shadow: 3px 3px 8px grey;
+}
+#navbar li:hover{
+    background-color: black;
+    color: white;
+    box-shadow: 10px 10px 10px grey;
+}
+#navbar li a{
+    color:white;
+    text-decoration: none;
+    margin:0px 0px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    /* border: 2px solid black; */
+    font-size: 30px;
+    font-weight: 900;
+}
+#navbar li a:hover{
+    color:blue;
+    box-shadow: 2px 2px 2px blue;
+}
+#navbar .active{
+    /* text-decoration: underline; */
+    color: red;
+}
+
+#section{
+    grid-area: section;
+}
+#sidebar{
+    grid-area: sidebar;
+    padding-top: 10px;
+}
+#foot{
+    grid-area: foot;
+}
+.links li{
+    margin: 10px 5px;
+    text-decoration: none;
+    font-size: 19px;
+    list-style: none;
+    margin:10px 5px;
+    padding:0px 5px;
+
+}
+.links li a{
+    text-decoration: none;
+    padding-left: 10px;
+}
+#sidebar h3{
+    margin:5px 10px;
+}
+#section h3{
+    margin:10px 10px;
+    
+
+}
+.about{
+    color:blue;
+    font-size: 30px;
+}
+#section{
+    padding: 10px 10px;
+}
+#section a{
+    text-decoration: none;
+}
+#section a:hover{
+    text-decoration: underline;
+}
+#section p{
+    font-size: 17px;
+    font-family: 'Source Sans 3', sans-serif;
+}
+#section h3{
+    display: inline;
+    font-family: 'Playfair Display', serif;
+    color:red;
+}
+.links a:hover{
+text-decoration: underline;
+color:red;
+}
+
+#foot h6{
+    font-size: 14px;
+    line-height: 0.3;
+    margin-bottom: 10px;
+}
+#foot{
+    /* display: flex; */
+    padding: 0px 5px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+#foot .btn{
+    margin-top: 0px;
+    margin-bottom: 3px;
+    margin-left: 44vw;
+justify-content: center;
+align-items: center;
+text-align: center;
+left:50%;
+}
+#foot a{
+    text-decoration: none;
+    list-style:none;
+    color:white;
+}
+/* #foot a:hover{
+color:green;
+} */
+.collegewebsite:hover{
+    color:green;    
+}
+/* GALLERY PAGE */
+#gallery{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+
+}
+.imgbox{
+    border:2px solid black;
+    box-shadow: 3px 3px 3px;
+    /* object-fit:fill; */
+    
+    margin: 10px;
+ 
+}
+.imgbox:hover{
+    box-shadow: 5px 5px 15px;
+}
+.imgbox img{
+height:100%;
+width:100%;
+object-fit: cover;
+}
+.email{
+    display: flex;
+    /* border:2px solid red; */
+}
+.email a{
+    padding:11px;
+    text-decoration: none;
+}
+.container1{
+    display: grid;
+    grid-template-areas: 
+    'head head head head head head'
+    'navbar navbar navbar navbar navbar navbar'
+    'section section section section section sidebar'
+    'foot foot foot foot foot foot';
+}
+.btn{
+    padding:5px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size :14px;
+    stroke: black;
+    border-radius: 8px;
+    background-color: green;
+    color: white;
+    font-weight: 600;
+
+}
+.reference a{
+    color:white;
+}
+.reference{
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+.btn:hover{
+
+    cursor: pointer;
+    filter: drop-shadow(3px 3px 5px black);
+}
+@media (max-width:950px) and (min-width:360px) {
+    #foot .btn{
+        margin-left:40vw;
+    }
+}
+@media (max-width:560px){
+    #section a{
+        font-size:11px;
+    }
+}
